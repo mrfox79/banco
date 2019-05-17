@@ -19,14 +19,12 @@ Esta e uma pagina usando ASP<P>
 	
 	'strConexao = "Provider=SQLNCLI11.1;Integrated Security=SSPI;Persist Security Info=False;User ID="";Initial Catalog=teste;Data Source=VLADIMR-NOTE;Initial File Name="";Server SPN="";"
 	'strConexao = "Provider=SQLNCLI11;Server=localhost;Database=teste;Integrated Security=SSPI;"
-	strConexao = "Provider=SQLOLEDB;Data Source=VLADIMIR-NOTE;Initial Catalog=teste;trusted_connection=yes"
+	'strConexao = "Provider=SQLOLEDB;Data Source=VLADIMIR-NOTE;Initial Catalog=teste;trusted_connection=yes"
 	
 	Set objCon = Server.CreateObject("ADODB.Connection")
 	objCon.Open strConexao
 
 	response.write("acesso garantido")
-
-
 
 %>
 
